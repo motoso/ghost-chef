@@ -1,0 +1,15 @@
+DEPENDENCIES
+  firewall (~> 2.4.0)
+  ghost-chef
+    path: .
+    metadata: true
+  yum-epel (~> 0.6.5)
+
+GRAPH
+  chef-sugar (3.3.0)
+  firewall (2.4.0)
+    chef-sugar (>= 0.0.0)
+  ghost-chef (0.1.0)
+  yum (3.10.0)
+  yum-epel (0.6.5)
+    yum (~> 3.2)
