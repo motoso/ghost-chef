@@ -6,21 +6,22 @@
 #
 # All rights reserved - Do Not Redistribute
 #
+include_recipe "yum-epel"
 
 
 # enable platform default firewall
 # @see https://supermarket.chef.io/cookbooks/firewall#knife
-firewall 'default' do
-  action :install
-end
+# firewall 'default' do
+#   action :install
+# end
 
 # open standard http port to tcp traffic only; insert as first rule
-firewall_rule 'http' do
-  port     80
-  protocol :tcp
-  position 1
-  command   :allow
-end
+# firewall_rule 'http' do
+#   port     80
+#   protocol :tcp
+#   position 1
+#   command   :allow
+# end
 
 package "nginx" do
   action :install
@@ -39,9 +40,4 @@ template "nginx.conf" do
   mode 0644
   notifies :start, 'service[nginx]'
   notifies :reload, 'service[nginx]'
-end
-
-template "/tmp/template_test.txt" do
-  source "template-test.txt.erb"
-  mode 0644
 end

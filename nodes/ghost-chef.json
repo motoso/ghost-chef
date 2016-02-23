@@ -6,5 +6,8 @@
   ],
   "automatic": {
     "ipaddress": "ghost-chef"
+  },
+  "nginx": {
+    "port": 80
   }
 }
