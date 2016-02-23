@@ -7,6 +7,7 @@ Chefの勉強をかねているんでコードが汚かったりします
 - nginxが一応起動する
 - berkshelfの導入
 - bundlerで必要なgem入れるようにした
+
 ## 2016-02-23
 - centos7.1にchef-solo設定するところまで
 
