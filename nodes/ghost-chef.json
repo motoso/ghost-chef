@@ -2,7 +2,8 @@
   "run_list": [
     "recipe[yum-epel]",
     "recipe[nginx]",
-    "recipe[firewall]"
+    "recipe[firewall]",
+    "recipe[docker]"
   ],
   "automatic": {
     "ipaddress": "ghost-chef"

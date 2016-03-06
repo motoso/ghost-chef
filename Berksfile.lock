@@ -1,4 +1,5 @@
 DEPENDENCIES
+  docker (~> 2.5.8)
   firewall (~> 2.4.0)
   ghost-chef
     path: .
@@ -9,6 +10,9 @@ DEPENDENCIES
 
 GRAPH
   chef-sugar (3.3.0)
+  compat_resource (12.7.3)
+  docker (2.5.8)
+    compat_resource (~> 12.7.1)
   firewall (2.4.0)
     chef-sugar (>= 0.0.0)
   ghost-chef (0.1.0)
